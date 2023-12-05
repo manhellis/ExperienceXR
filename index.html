@@ -21,8 +21,30 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <script>
+      function showMessage() {
+        const messageBox = document.getElementById("messageBox");
+        messageBox.classList.remove("hidden");
+      }
+    </script>
   </head>
   <body class="font-poppins">
+    <div
+      id="messageBox"
+      class="fixed inset-0 bg-gray-600 bg-opacity-50 h-full w-full flex items-center justify-center hidden z-10"
+    >
+      <div class="bg-white p-4 rounded-lg shadow-xl text-gray-700">
+        <p>Directed to Ticketmaster</p>
+        <!-- Close Button -->
+        <button
+          onclick="document.getElementById('messageBox').classList.add('hidden')"
+          class="mt-4 bg-red-500 text-white font-bold py-1 px-3 rounded hover:bg-red-700 transition duration-300"
+        >
+          Close
+        </button>
+      </div>
+    </div>
     <header class="bg-white text-gray-900 body-font">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
@@ -41,10 +63,13 @@
         >
           <a href="./index.html" class="mr-4 hover:text-gray-500">Home</a>
           <a href="./about.html" class="mr-4 hover:text-gray-500">About</a>
-          <a href="./contact.html" class="mr-4 hover:text-gray-500">Contact Us</a>
+          <a href="./contact.html" class="mr-4 hover:text-gray-500"
+            >Contact Us</a
+          >
           <!-- Book Now Button -->
           <a
             href="#book"
+            onclick="showMessage()"
             class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 rounded text-base"
             >Book Now</a
           >
@@ -197,12 +222,13 @@
             </div>
           </div>
         </div>
-        <div
-          class="text-black text-3xl font-medium whitespace-nowrap mt-20 max-md:max-w-full max-md:mt-10"
-        >
-          Who We Are
-        </div>
+
         <div class="mt-7 px-0.5 max-md:max-w-full">
+          <div
+            class="text-black text-3xl font-medium whitespace-nowrap mt-20 max-md:max-w-full max-md:mt-10"
+          >
+            Who We Are
+          </div>
           <div
             class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0"
           >
@@ -218,11 +244,17 @@
               </div>
             </div>
             <div
-              class="flex flex-col items-stretch w-[47%] ml-5 max-md:w-full max-md:ml-0"
+              class="flex flex-col items-start justify-start w-[54%] max-md:w-full max-md:ml-0"
             >
               <div
-                class="border bg-white flex w-[652px] shrink-0 max-w-full h-[436px] flex-col mx-auto rounded-xl border-solid border-neutral-400 max-md:mt-10"
-              ></div>
+                class="border bg-white flex shrink-0 flex-col items-start justify-start mt-1 mx-auto rounded-xl border-solid border-neutral-400 max-md:mt-10"
+              >
+                <img
+                  class="w-[770px]"
+                  src="./img/creative_studio.jpeg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -250,19 +282,18 @@
                 <div
                   class="text-black text-5xl font-semibold self-stretch max-md:max-w-full max-md:text-4xl"
                 >
-                  Lorem ipsum dolor sit amet
-                </div>
-                <div
-                  class="text-black text-4xl self-stretch mt-8 max-md:max-w-full"
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor
-                </div>
-                <button
-                  class="text-black text-xl font-medium whitespace-nowrap bg-stone-300 w-[282px] max-w-full justify-center items-center mt-24 px-16 py-6 max-md:mt-10 max-md:px-5"
-                >
-                  CTA
-                </button>
+                Book Your Ticket Today!
+              </div>
+              <div
+                class="text-black text-4xl self-stretch mt-8 max-md:max-w-full"
+              >
+                Click to Book with our partner Ticketmaster!
+              </div>
+              <button
+              onclick="showMessage()"
+                class="text-black text-xl font-medium whitespace-nowrap bg-stone-300 w-[282px] max-w-full justify-center items-center mt-24 px-16 py-6 max-md:mt-10 max-md:px-5"
+              >
+                Book Now
               </div>
             </div>
           </div>

@@ -12,8 +12,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+
+    <script>
+      function showMessage() {
+        const messageBox = document.getElementById('messageBox');
+        messageBox.classList.remove('hidden');
+      }
+    </script>
   </head>
   <body class="font-poppins">
+    <div id="messageBox" class="fixed inset-0 bg-gray-600 bg-opacity-50 h-full w-full flex items-center justify-center hidden z-10">
+      <div class="bg-white p-4 rounded-lg shadow-xl text-gray-700">
+        <p>Directed to Ticketmaster</p>
+        <!-- Close Button -->
+        <button onclick="document.getElementById('messageBox').classList.add('hidden')" class="mt-4 bg-red-500 text-white font-bold py-1 px-3 rounded hover:bg-red-700 transition duration-300">
+          Close
+        </button>
+      </div>
+    </div>
     <header class="bg-white text-gray-900 body-font">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
@@ -36,6 +52,7 @@
           <!-- Book Now Button -->
           <a
             href="#book"
+            onclick="showMessage()"
             class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 rounded text-base"
             >Book Now</a
           >
@@ -75,15 +92,7 @@
               <div
                 class="text-black text-2xl mt-2 max-md:max-w-full max-md:mt-10"
               >
-                A report by Deloitte states that from 2019 to 2023, XR has been
-                growing rapidly. Covid really pushed the need for technological
-                advancement and solutions within our everyday spaces. A large
-                majority is in the gaming industry, but retail and education are
-                big categories as well. A report by Statista says that the
-                business to consumer market size as of 2023 is approximately
-                31.1 billion USD, and is up approximately 23.5%. There is not as
-                many commercial XR headset shipments going out, but consumer
-                level headsets are upward 17.8 million.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, perferendis rerum ullam harum totam qui excepturi quo voluptatibus tempora, quos provident eius hic! Repellendus quia adipisci velit incidunt voluptates fugiat ratione quasi, hic, laudantium culpa cum excepturi delectus esse asperiores similique obcaecati ut quibusdam ipsa nesciunt rerum, nostrum suscipit. Non?
               </div>
             </div>
 
@@ -134,15 +143,9 @@
               class="flex flex-col items-stretch w-[46%] ml-5 max-md:w-full max-md:ml-0"
             >
               <div class="text-black text-2xl max-md:max-w-full max-md:mt-10">
-                Career XR is an innovative event conference centered around
-                Extended Reality (XR) technologies. Designed to inspire and
-                educate, it targets tech students and young professionals from
-                the lower mainland.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, tempore sapiente ipsa praesentium minus mollitia culpa magnam nihil placeat sed doloremque nulla id eos perferendis?
                 <br />
-                This report provides an overview of the market trends, audience
-                analysis, unique event features, and competitive landscape,
-                highlighting Odyssey X's distinct position in the technology
-                event space.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde mollitia sequi fuga maxime numquam! Eaque aut alias quis amet maiores sunt laborum reiciendis tenetur, culpa aliquid dolor libero minima tempore magni ex illum iusto excepturi?
               </div>
             </div>
           </div>
@@ -162,9 +165,7 @@
               <div
                 class="text-black text-2xl  max-md:max-w-full "
               >
-                OdysseyX is an agency which aims to make advancements in
-                technology accessible and available to the public. Based in
-                Vancouver, BC in Canada.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, cum in velit voluptatum consequuntur dolorem officiis, ipsa praesentium numquam eligendi sunt tenetur delectus earum ad dolorum eum id debitis officia quo maiores architecto aut! Inventore distinctio nemo corrupti corporis iure aperiam odit reiciendis. Quae saepe in, esse, quo at accusamus quasi consequuntur labore ducimus adipisci earum obcaecati quidem vel fugiat!
               </div>
             </div>
             <div
@@ -175,7 +176,7 @@
               >
                 <img
                   class="w-[770px]"
-                  src="./img/creative_studio.jpeg"
+                  src="./img/xr_img.jpeg"
                   alt=""
                 />
               </div>
@@ -206,18 +207,18 @@
                 <div
                   class="text-black text-5xl font-semibold self-stretch max-md:max-w-full max-md:text-4xl"
                 >
-                  Lorem ipsum dolor sit amet
+                  Book Your Ticket Today!
                 </div>
                 <div
                   class="text-black text-4xl self-stretch mt-8 max-md:max-w-full"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor
+                  Click to Book with our partner Ticketmaster!
                 </div>
                 <button
+                onclick="showMessage()"
                   class="text-black text-xl font-medium whitespace-nowrap bg-stone-300 w-[282px] max-w-full justify-center items-center mt-24 px-16 py-6 max-md:mt-10 max-md:px-5"
                 >
-                  CTA
+                  Book Now
                 </button>
               </div>
             </div>
