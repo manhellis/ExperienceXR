@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body class="font-poppins">
+    <header class="bg-white text-gray-900 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <!-- Image Section -->
+        <a href="#home" class="flex-shrink-0">
+          <img
+            src="./img/experience_logo-05.svg"
+            alt="Your Logo"
+            class="h-16 md:h-20"
+          />
+        </a>
+        <!-- Navigation Links -->
+        <nav
+          class="flex flex-grow justify-end items-center text-base md:ml-auto"
+        >
+          <a href="./index.html" class="mr-4 hover:text-gray-500">Home</a>
+          <a href="./about.html" class="mr-4 hover:text-gray-500">About</a>
+          <a href="#contact" class="mr-4 hover:text-gray-500">Contact Us</a>
+          <!-- Book Now Button -->
+          <a
+            href="#book"
+            class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 rounded text-base"
+            >Book Now</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="">
+      <div class="bg-slate-200 mx-auto container justify-center drop-shadow">
+        <form class="space-y-6 bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-4">Say Hello!</h2>
+
+          <!-- Full Name Field -->
+          <div>
+            <label
+              for="full_name"
+              class="block text-sm font-medium text-gray-700"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="full_name"
+              name="full_name"
+              placeholder="Enter Name"
+              required
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            />
+          </div>
+
+          <!-- Contact Number Field -->
+          <div>
+            <label
+              for="contact_number"
+              class="block text-sm font-medium text-gray-700"
+              >Contact Number</label
+            >
+            <input
+              type="tel"
+              id="contact_number"
+              name="contact_number"
+              placeholder="Contact Number"
+              required
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            />
+          </div>
+
+          <!-- Email Address Field -->
+          <div>
+            <label
+              for="email_address"
+              class="block text-sm font-medium text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email_address"
+              name="email_address"
+              placeholder="Email Address"
+              required
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            />
+          </div>
+
+          <!-- Message Field -->
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Enter Your Message"
+              required
+              class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <button
+              type="submit"
+              class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 active:bg-gray-900 transition duration-150 ease-in-out"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div
+        class="bg-zinc-100 mt-14 pl-20 pr-16 py-12 max-md:max-w-full max-md:mt-10 max-md:px-5"
+      >
+        <div
+          class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0"
+        >
+          <div
+            class="flex flex-col items-stretch w-[32%] max-md:w-full max-md:ml-0"
+          >
+            <img
+              loading="lazy"
+              src="./img/experience_logo-03.svg"
+              class="aspect-square object-contain object-center w-full overflow-hidden mt-7 max-md:mt-10"
+            />
+          </div>
+          <div
+            class="flex flex-col items-stretch w-[68%] ml-5 max-md:w-full max-md:ml-0"
+          >
+            <div
+              class="flex flex-col mt-20 items-end max-md:max-w-full max-md:mt-10"
+            >
+              <div
+                class="text-black text-5xl font-semibold self-stretch max-md:max-w-full max-md:text-4xl"
+              >
+                Lorem ipsum dolor sit amet
+              </div>
+              <div
+                class="text-black text-4xl self-stretch mt-8 max-md:max-w-full"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </div>
+              <button
+                class="text-black text-xl font-medium whitespace-nowrap bg-stone-300 w-[282px] max-w-full justify-center items-center mt-24 px-16 py-6 max-md:mt-10 max-md:px-5"
+              >
+                CTA
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

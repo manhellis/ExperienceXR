@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ExperienceXR</title>
+    <title>Index</title>
     <link rel="stylesheet" href="./dist/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body class="font-poppins">
     <header class="bg-white text-gray-900 body-font">
@@ -24,9 +39,9 @@
         <nav
           class="flex flex-grow justify-end items-center text-base md:ml-auto"
         >
-          <a href="#home" class="mr-4 hover:text-gray-500">About</a>
-          <a href="#about" class="mr-4 hover:text-gray-500">XR Exhibition</a>
-          <a href="#contact" class="mr-4 hover:text-gray-500">Contact Us</a>
+          <a href="./index.html" class="mr-4 hover:text-gray-500">Home</a>
+          <a href="./about.html" class="mr-4 hover:text-gray-500">About</a>
+          <a href="./contact.html" class="mr-4 hover:text-gray-500">Contact Us</a>
           <!-- Book Now Button -->
           <a
             href="#book"
@@ -36,7 +51,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="">
       <div class="flex flex-col lg:flex-col bg-slate-200 p-14 items-center">
         <img
           src="./img/experience_logo-03.svg"
@@ -52,7 +67,7 @@
         <div></div>
       </div>
       <div
-        class="flex w-full max-w-[1501px] flex-col items-stretch mt-20 px-5 max-md:max-w-full max-md:mt-10"
+        class="flex w-full flex-col items-stretch mt-20 px-5 max-md:max-w-full max-md:mt-10"
       >
         <div
           class="text-black text-3xl font-medium whitespace-nowrap max-md:max-w-full"
@@ -84,90 +99,86 @@
               class="flex flex-col items-stretch w-[46%] ml-5 max-md:w-full max-md:ml-0"
             >
               <div
-                class="border bg-white flex w-[652px] shrink-0 max-w-full h-[436px] flex-col mx-auto rounded-xl border-solid border-neutral-400 max-md:mt-10"
-              ></div>
+                class="border bg-white flex shrink-0 flex-col mx-auto max-md:mt-10"
+              >
+                <img
+                  class="w-[652px] max-w-full h-[436px] object-cover rounded-xl border-solid border-neutral-400"
+                  src="./img/maybe_banner_img_.jpeg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <div
-        class="bg-zinc-100 self-stretch flex w-full flex-col justify-center items-center mt-14 px-16 py-6 max-md:max-w-full max-md:mt-10 max-md:px-5"
+        class="flex max-w-full bg-slate-200 flex-row flex-wrap mt-8 pt-8 pb-8 items-stretch justify-between gap-5 md:max-w-full md:items-center md:justify-center"
+      >
+        <!-- First Item -->
+        <div class="flex flex-col items-center mb-4 md:mb-0">
+          <div class="text-black text-5xl font-semibold whitespace-nowrap">
+            10,000
+          </div>
+          <div class="text-black text-3xl self-stretch whitespace-nowrap mt-6">
+            Social Media Interactions
+          </div>
+        </div>
+        <!-- Second Item -->
+        <div class="flex flex-col items-center mb-4 md:mb-0">
+          <div class="text-black text-5xl font-semibold whitespace-nowrap">
+            20,000
+          </div>
+          <div class="text-black text-3xl self-stretch whitespace-nowrap mt-6">
+            Viewers Reached
+          </div>
+        </div>
+        <!-- Third Item -->
+        <div class="flex flex-col items-center mb-4 md:mb-0">
+          <div class="text-black text-5xl font-semibold whitespace-nowrap">
+            20
+          </div>
+          <div class="text-black text-3xl self-stretch whitespace-nowrap mt-8">
+            Exhibitors
+          </div>
+        </div>
+        <!-- Fourth Item -->
+        <div class="flex flex-col items-center">
+          <div class="text-black text-5xl font-semibold whitespace-nowrap">
+            200
+          </div>
+          <div
+            class="text-black text-center text-3xl self-stretch whitespace-nowrap mt-8"
+          >
+            Participants
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex w-full flex-col items-stretch mt-24 px-5 max-md:max-w-full"
       >
         <div
-          class="flex w-full max-w-[1478px] items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap max-md:justify-center"
+          class="text-black text-3xl justify-self-end text-right font-medium max-w-full m-10 max-md:mt-10"
         >
-          <div
-            class="flex items-stretch justify-between gap-5 self-start max-md:max-w-full max-md:flex-wrap"
-          >
-            <div class="flex grow basis-[0%] flex-col items-center">
-              <div
-                class="text-black text-5xl font-semibold whitespace-nowrap max-md:text-4xl"
-              >
-                10,000
-              </div>
-              <div
-                class="text-black text-3xl self-stretch whitespace-nowrap mt-6"
-              >
-                Social Media Interactions
-              </div>
-            </div>
-            <div class="flex grow basis-[0%] flex-col items-center">
-              <div
-                class="text-black text-5xl font-semibold whitespace-nowrap max-md:text-4xl"
-              >
-                20,000
-              </div>
-              <div
-                class="text-black text-3xl self-stretch whitespace-nowrap mt-6"
-              >
-                Viewers Reached
-              </div>
-            </div>
-          </div>
-          <div class="flex basis-[0%] flex-col self-start items-start">
-            <div
-              class="text-black text-5xl font-semibold whitespace-nowrap ml-4 max-md:text-4xl max-md:ml-2.5"
-            >
-              20
-            </div>
-            <div
-              class="text-black text-3xl self-stretch whitespace-nowrap mt-8"
-            >
-              Exhibitors
-            </div>
-          </div>
-          <div class="flex basis-[0%] flex-col items-center">
-            <div
-              class="text-black text-5xl font-semibold whitespace-nowrap max-md:text-4xl"
-            >
-              200
-            </div>
-            <div
-              class="text-black text-center text-3xl self-stretch whitespace-nowrap mt-8"
-            >
-              Participants
-            </div>
-          </div>
+          ExperienceXR
         </div>
-      </div>
-      <div
-        class="text-black text-3xl font-medium w-[277px] max-w-full ml-48 mt-16 max-md:mt-10"
-      >
-        ExperienceXR
-      </div>
-      <div
-        class="flex w-full max-w-[1504px] flex-col items-stretch mt-10 px-5 max-md:max-w-full"
-      >
         <div class="max-md:max-w-full">
           <div
             class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0"
           >
             <div
-              class="flex flex-col items-stretch w-[54%] max-md:w-full max-md:ml-0"
+              class="flex flex-col items-start justify-start w-[54%] max-md:w-full max-md:ml-0"
             >
               <div
-                class="border bg-white flex w-[770px] shrink-0 max-w-full h-[409px] flex-col mt-1 mx-auto rounded-xl border-solid border-neutral-400 max-md:mt-10"
-              ></div>
+                class="border bg-white flex shrink-0 flex-col items-start justify-start mt-1 mx-auto rounded-xl border-solid border-neutral-400 max-md:mt-10"
+              >
+                <img
+                  class="w-[770px]"
+                  src="./img/real_life_conference.jpeg"
+                  alt=""
+                />
+              </div>
             </div>
             <div
               class="flex flex-col items-stretch w-[46%] ml-5 max-md:w-full max-md:ml-0"
@@ -216,7 +227,7 @@
           </div>
         </div>
         <div
-          class="bg-zinc-100 mt-14 pl-20 pr-16 py-12 max-md:max-w-full max-md:mt-10 max-md:px-5"
+          class="bg-zinc-100 w-full mt-14 pl-20 pr-16 py-12 max-md:max-w-full max-md:mt-10 max-md:px-5"
         >
           <div
             class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0"
